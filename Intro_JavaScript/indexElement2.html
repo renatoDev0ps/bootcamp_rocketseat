@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Curso JavaScript</title>
+  </head>
+  <body>
+    <div id = "app">
+      <input type="text" id="nome">
+    </div>
+    
+    <script>
+      var linkElement = document.createElement('a');
+      linkElement.setAttribute('href', 'https://www.techtonica.com.br');
+      linkElement.setAttribute('title', 'Site da techtonica.com.br');
+
+      var textElement = document.createTextNode('Acessar site da Techtônica');
+      linkElement.appendChild(textElement);
+
+      var containerElement = document.querySelector('div#app');
+      containerElement.appendChild(linkElement);
+
+      var inputElement = document.querySelector('input#nome');
+      containerElement.removeChild(inputElement);
+    </script>
+  </body>
+</html>

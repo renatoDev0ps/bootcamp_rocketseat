@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Curso JavaScript</title>
+  </head>
+  <body>
+    <script>
+      var sexo = 'G', idade = 23;
+
+      if (sexo === 'M' && idade === 23) {
+        console.log('OK');
+      } else {
+        console.log('Sexo e idade nao correspondem ao exigido!');
+      }
+
+      if (sexo == 'M' || idade >= 18) {
+        console.log('OK');
+      }
+
+      if (sexo !== 'F') {
+        console.log('OK');
+      } else {
+        console.log('sexo igual a:', sexo);
+      }
+
+      var masculino = sexo === 'M';
+
+      console.log(masculino);
+    </script>
+  </body>
+</html>
